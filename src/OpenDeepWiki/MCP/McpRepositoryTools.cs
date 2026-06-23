@@ -31,7 +31,7 @@ public class McpRepositoryTools
         IOptions<RepositoryAnalyzerOptions> repoOptions,
         [Description("Search query or question to answer.")] string query,
         [Description("Maximum number of documents to return (default: 5, max: 20)")] int maxResults = 5,
-        [Description("Language code (default: en)")] string language = "en",
+        [Description("Language code (default: zh)")] string language = "zh",
         CancellationToken cancellationToken = default)
     {
         var repositoryScopeError = ValidateAndResolveRepositoryScope(mcpServer, out var resolvedOwner, out var resolvedName);
